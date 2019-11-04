@@ -1,0 +1,15 @@
+# This is an example how one could update version of a package which is stored on pypi.
+
+1. Edit setup.py
+2. Edit version.txt
+3. Edit CHANGELOG.rst
+4. python3 -m venv venv3
+5. source venv3/bin/activate
+6. pip3 install -e .[dev]
+7. If no binaries:
+     python3 setup.py sdist        
+   If binaries:   
+     python3 setup.py sdist bdist_wheel 
+8. python3 -m pip3 install --user --upgrade twine
+9. python3 -m twine upload dist/*
+10. Upload the new release on github

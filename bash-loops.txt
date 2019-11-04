@@ -1,0 +1,7 @@
+# How to write simple bash loops
+
+for i in $(seq 10 15); do echo $i; done
+
+for i in $(echo "10 12 15"); do echo $i; done
+
+first echo, then execute

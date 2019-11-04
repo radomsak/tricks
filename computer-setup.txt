@@ -1,0 +1,52 @@
+# Commands and steps to be performed after a new installation of ubuntu.
+
+mouse speed 0.5cm to the right, one red light on mouse
+sticky edges off
+passphrase save in lastpass
+install chrome
+clean utilities
+add-on lastpass to chrome
+install updates
+sudo apt install vim
+desktop background
+multiload indicator https://askubuntu.com/questions/839211/how-to-install-system-load-indicator-in-ubuntu-16-10 - change scheme to traditional
+
+
+sudo apt install -y git
+sudo apt install openssh-server -y
+sudo apt install -y curl
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+sudo apt install git-crypt
+mkdir -p ~/workspace
+cd ~/workspace
+sudo apt-get install python3-venv
+
+
+install pycharm and import settings https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux&code=PCChttps://askubuntu.com/questions/391439/how-can-i-set-up-pycharm-to-launch-from-the-launcher
+
+# install docker
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
+
+sudo apt install gitk
+sudo apt install meld
+
+######
+OPTIONS
+######
+#install cuda
+curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
+sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
+sudo apt-get update
+sudo apt-get install cuda-9-0
+sudo apt install nvidia-cuda-toolkit
+
+# install nvidia drivers - uninstalls cuda :(
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+sudo apt install nvidia-415
+
+# install nvidia docker
+https://github.com/NVIDIA/nvidia-docker
+

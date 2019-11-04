@@ -1,3 +1,5 @@
+# Commands and steps to be performed after a new installation of ubuntu.
+
 mouse speed 0.5cm to the right, one red light on mouse
 sticky edges off
 passphrase save in lastpass

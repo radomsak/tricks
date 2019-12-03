@@ -1,0 +1,4 @@
+# How to make clion work with clang?
+
+Go to Settings / Build, Execution, Deployment / CMake / CMake options and add
+-DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++

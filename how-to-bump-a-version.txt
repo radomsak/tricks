@@ -3,13 +3,14 @@
 1. Edit setup.py
 2. Edit version.txt
 3. Edit CHANGELOG.rst
-4. python3 -m venv venv3
-5. source venv3/bin/activate
-6. pip3 install -e .[dev]
-7. If no binaries:
+4. Commit the changes and merge to master
+5. python3 -m venv venv3
+6. source venv3/bin/activate
+7. pip3 install -e .[dev]
+8. If no binaries:
      python3 setup.py sdist        
    If binaries:   
      python3 setup.py sdist bdist_wheel 
-8. python3 -m pip3 install --user --upgrade twine
-9. python3 -m twine upload dist/*
-10. Upload the new release on github
+9. python3 -m pip3 install --user --upgrade twine
+10. python3 -m twine upload dist/*
+11. Upload the new release on github
